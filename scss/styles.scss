@@ -4,8 +4,10 @@
 
 $h1-font: 'Inconsolata', monospace;
 $body-font: 'Space Mono', monospace;
-$font-color-primary: #333;
-$font-color-secundary: #FFF;
+$footer-font: 'Montserrat', sans-serif;
+$font-color-primary: #333333;
+$font-color-secundary: #FFFFFF;
+$font-color-footer: #BDBDBD;
 
 .Body {
     max-height: 100vh;
@@ -75,5 +77,21 @@ $font-color-secundary: #FFF;
         background-color: $font-color-primary;
         color: $font-color-secundary;
         display: inline;
+    }
+}
+.Footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    &-p {
+        text-align: center;
+        font-family: $footer-font;
+        color: $font-color-footer;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    &-a {
+        text-decoration: underline;
+        font-weight: bold;
     }
 }
